@@ -1,0 +1,59 @@
+{
+    "name": "Gallery",
+    "description": "",
+    "displayField": "title",
+    "fields": [
+      {
+        "id": "title",
+        "name": "Title",
+        "type": "Symbol",
+        "localized": false,
+        "required": true,
+        "validations": [
+          {
+            "unique": true
+          }
+        ],
+        "disabled": false,
+        "omitted": false
+      },
+      {
+        "id": "content",
+        "name": "Content",
+        "type": "Array",
+        "localized": false,
+        "required": false,
+        "validations": [],
+        "disabled": false,
+        "omitted": false,
+        "items": {
+          "type": "Link",
+          "validations": [
+            {
+              "linkContentType": [
+                "artwork"
+              ]
+            }
+          ],
+          "linkType": "Entry"
+        }
+      },
+      {
+        "id": "columns",
+        "name": "Columns",
+        "type": "Integer",
+        "localized": false,
+        "required": true,
+        "validations": [
+          {
+            "range": {
+              "min": 1,
+              "max": 4
+            }
+          }
+        ],
+        "disabled": false,
+        "omitted": false
+      }
+    ]
+}

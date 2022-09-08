@@ -1,0 +1,63 @@
+{
+    "name": "Column Section",
+    "description": "",
+    "displayField": "title",
+    "fields": [
+      {
+        "id": "title",
+        "name": "Title",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "validations": [],
+        "disabled": false,
+        "omitted": false
+      },
+      {
+        "id": "content",
+        "name": "Content",
+        "type": "Array",
+        "localized": false,
+        "required": false,
+        "validations": [],
+        "disabled": false,
+        "omitted": false,
+        "items": {
+          "type": "Link",
+          "validations": [
+            {
+              "linkContentType": [
+                "artSection",
+                "artwork",
+                "columnSection",
+                "tdForm",
+                "tdText"
+              ]
+            }
+          ],
+          "linkType": "Entry"
+        }
+      },
+      {
+        "id": "dcJustifyContent",
+        "name": "JustifyContent",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "validations": [
+          {
+            "in": [
+              "center",
+              "start",
+              "end"
+            ]
+          }
+        ],
+        "defaultValue": {
+          "en-US": "start"
+        },
+        "disabled": false,
+        "omitted": false
+      }
+    ]
+}

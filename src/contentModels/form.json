@@ -1,0 +1,38 @@
+{
+    "name": "Form",
+    "description": "",
+    "displayField": "title",
+    "fields": [
+      {
+        "id": "title",
+        "name": "Title",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "validations": [],
+        "disabled": false,
+        "omitted": false
+      },
+      {
+        "id": "fields",
+        "name": "Fields",
+        "type": "Array",
+        "localized": false,
+        "required": false,
+        "validations": [],
+        "disabled": false,
+        "omitted": false,
+        "items": {
+          "type": "Link",
+          "validations": [
+            {
+              "linkContentType": [
+                "dcFormComponent"
+              ]
+            }
+          ],
+          "linkType": "Entry"
+        }
+      }
+    ]
+}

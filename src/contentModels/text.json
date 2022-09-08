@@ -1,0 +1,79 @@
+{
+    "name": "Text",
+    "description": "",
+    "displayField": "title",
+    "fields": [
+      {
+        "id": "title",
+        "name": "Title",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "validations": [],
+        "disabled": false,
+        "omitted": false
+      },
+      {
+        "id": "input",
+        "name": "Input",
+        "type": "RichText",
+        "localized": false,
+        "required": false,
+        "validations": [
+          {
+            "enabledNodeTypes": [
+              "heading-2",
+              "heading-3",
+              "heading-4",
+              "heading-5",
+              "heading-6",
+              "ordered-list",
+              "unordered-list",
+              "hr",
+              "blockquote",
+              "hyperlink"
+            ],
+            "message": "Only heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, and link to Url nodes are allowed"
+          },
+          {
+            "nodes": {}
+          }
+        ],
+        "disabled": false,
+        "omitted": false
+      },
+      {
+        "id": "textAlignment",
+        "name": "Text Alignment",
+        "type": "Array",
+        "localized": false,
+        "required": false,
+        "validations": [
+          {
+            "size": {
+              "max": 1
+            }
+          }
+        ],
+        "defaultValue": {
+          "en-US": [
+            "Left"
+          ]
+        },
+        "disabled": false,
+        "omitted": false,
+        "items": {
+          "type": "Symbol",
+          "validations": [
+            {
+              "in": [
+                "Left",
+                "Center",
+                "Right"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+}

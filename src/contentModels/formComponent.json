@@ -1,0 +1,35 @@
+{
+    "name": "Form Component",
+    "description": "",
+    "displayField": "title",
+    "fields": [
+      {
+        "id": "title",
+        "name": "Title",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "validations": [],
+        "disabled": false,
+        "omitted": false
+      },
+      {
+        "id": "type",
+        "name": "Type",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "validations": [
+          {
+            "in": [
+              "Textfield",
+              "Email",
+              "Textarea"
+            ]
+          }
+        ],
+        "disabled": false,
+        "omitted": false
+      }
+    ]
+}
